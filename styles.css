@@ -1,0 +1,35 @@
+body {
+background-color: FFF5E8; 
+}
+
+p {
+color: black;
+}
+
+/* Remove default spacing */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Menu container */
+.top-menu {
+    display: flex;
+    justify-content: right;     /* right menu horizontally */
+    background-color: FFFFFF;
+}
+
+/* Menu links */
+.top-menu a {
+    color: black;
+    text-decoration: none;
+    padding: 14px 20px;
+    display: block;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+/* Mouse-over effect */
+.top-menu a:hover {
+    background-color: #FFFFFF;
+    transform: scale(1.1); /* slight grow effect */
+}
