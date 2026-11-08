@@ -1,1 +1,128 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Selling</title>
 
+<link rel="stylesheet" href="styles.css">
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+        background: #f8f7f5;
+        padding: 30px;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    h1 {
+        text-align: left;
+        margin-bottom: 30px;
+        font-size: 28px;
+    }
+
+    .gallery {
+        columns: 5;
+        column-gap: 18px;
+        flex: 1;
+    }
+
+    .gallery-item {
+        display: inline-block;
+        width: 100%;
+        margin-bottom: 18px;
+        break-inside: avoid;
+        overflow: hidden;
+        border-radius: 12px;
+        cursor: pointer;
+    }
+
+    .gallery-item img {
+        width: 100%;
+        display: block;
+        border-radius: 12px;
+        transition: transform 0.3s ease;
+    }
+
+    .gallery-item:hover img {
+        transform: scale(1.04);
+    }
+
+    @media (max-width: 1000px) {
+        .gallery { columns: 4; }
+    }
+
+    @media (max-width: 700px) {
+        .gallery { columns: 3; }
+    }
+
+    @media (max-width: 450px) {
+        .gallery { columns: 2; }
+    }
+
+    .copyright {
+        text-align: center;
+        font-size: 10px;
+        letter-spacing: 1px;
+        margin-top: 40px;
+        padding: 20px 0 5px;
+        color: #555;
+    }
+</style>
+</head>
+
+<body>
+
+<h1>Portfolio</h1>
+
+<div class="gallery">
+
+    <a href="landscape.html" class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?w=600" alt="Landscape">
+    </a>
+
+    <a href="flowers.html" class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?w=600" alt="Flowers">
+    </a>
+
+    <a href="interior.html" class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1513519245088-0e12902e5a38?w=600" alt="Interior">
+    </a>
+
+    <a href="nature.html" class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=600" alt="Nature">
+    </a>
+
+    <a href="interior-design.html" class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1494438639946-1ebd1d20bf85?w=600" alt="Interior design">
+    </a>
+
+    <a href="architecture.html" class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1518005020951-eccb494ad742?w=600" alt="Architecture">
+    </a>
+
+    <a href="sunset.html" class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1490730141103-6cac27aaab94?w=600" alt="Sunset">
+    </a>
+
+    <a href="fashion.html" class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=600" alt="Fashion">
+    </a>
+
+</div>
+
+<footer class="copyright">
+    ALL IMAGES AND SITE CONTENT COPYRIGHT © 2026 CHARLOTTE PEPPER
+</footer>
+
+</body>
+</html>
