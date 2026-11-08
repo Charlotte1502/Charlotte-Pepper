@@ -1,13 +1,12 @@
-<!DOCTYPE html>
-<head>
-    <link rel="stylesheet" href="styles.css">
-
+html
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Portfolio</title>
+
+<link rel="stylesheet" href="styles.css">
 
 <style>
     * {
@@ -20,6 +19,9 @@
         font-family: Arial, sans-serif;
         background: #f8f7f5;
         padding: 30px;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
     }
 
     h1 {
@@ -31,6 +33,7 @@
     .gallery {
         columns: 5;
         column-gap: 18px;
+        flex: 1;
     }
 
     .gallery-item {
@@ -64,6 +67,15 @@
 
     @media (max-width: 450px) {
         .gallery { columns: 2; }
+    }
+
+    .copyright {
+        text-align: center;
+        font-size: 10px;
+        letter-spacing: 1px;
+        margin-top: 40px;
+        padding: 20px 0 5px;
+        color: #555;
     }
 </style>
 </head>
@@ -107,10 +119,10 @@
     </a>
 
 </div>
-    
-<small>
-    ALL IMAGES AND SITE CONTENT COPYRIGHT ©2026 CHARLOTTE PEPPER
-</small>
-    
+
+<footer class="copyright">
+    ALL IMAGES AND SITE CONTENT COPYRIGHT © 2026 CHARLOTTE PEPPER
+</footer>
+
 </body>
 </html>
